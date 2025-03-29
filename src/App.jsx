@@ -1,0 +1,16 @@
+import "./App.css";
+import ErrorBoundary from "./utils/ErrorBoundary";
+import Home from "./views/HomeComponent/Home";
+import { BrowserRouter } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <ErrorBoundary fallback={<p>Something went wrong</p>}>
+        <Home />
+      </ErrorBoundary>
+    </BrowserRouter>
+  );
+}
+
+export default App;
