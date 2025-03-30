@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <ErrorBoundary fallback={<p>Something went wrong</p>}>
+      <ErrorBoundary fallback={<p>Box Box</p>}>
         <Home />
       </ErrorBoundary>
     </BrowserRouter>
